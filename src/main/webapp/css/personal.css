@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+* html,
+* body {
+    font-size: 12px;
+}
+
+* html .personal,
+* body .personal {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+* html .personal .settings,
+* body .personal .settings {
+    width: 100%;
+    height: 10%;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #10D99F;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+* html .personal .content,
+* body .personal .content {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+* html .personal .content .list,
+* body .personal .content .list {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+* html .personal .content .list li,
+* body .personal .content .list li {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+* html .personal .content .list li .icon,
+* body .personal .content .list li .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    display: inline-block;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* html .personal .content .list li .location,
+* body .personal .content .list li .location {
+    background-image: url("../image/icon_location.png");
+}
+
+* html .personal .content .list li .advice,
+* body .personal .content .list li .advice {
+    background-image: url("../image/advice.png");
+}
+
+* html .personal .content .list li .star,
+* body .personal .content .list li .star {
+    background-image: url("../image/star.png");
+}
+
+* html .personal .content .list li .aboutUs,
+* body .personal .content .list li .aboutUs {
+    background-image: url("../image/aboutus.png");
+}
+
+* html .personal .content .list li .user,
+* body .personal .content .list li .user {
+    background-image: url("../image/user.png");
+}
+
+* html .personal .content .list li .text,
+* body .personal .content .list li .text {
+    width: 9rem;
+    height: 2rem;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+* html .personal .content .list li a,
+* body .personal .content .list li a {
+    width: 14px;
+    height: 14px;
+    margin-left: 121px;
+    display: inline-block;
+    background: url("../image/big.png") 100% 100% / cover no-repeat;
+}
+

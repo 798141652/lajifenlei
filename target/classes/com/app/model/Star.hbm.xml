@@ -8,7 +8,7 @@
     <class name="com.app.model.Star" table="star" catalog="lajifenlei">
         <id name="userId" type="java.lang.String">
             <column name="userID" length="20" />
-            <generator class="assigned" />
+            <generator class="increment"></generator>
         </id>
         <property name="starNum" type="java.lang.Integer">
             <column name="starNum" not-null="true" />

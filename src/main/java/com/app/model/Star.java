@@ -18,8 +18,7 @@ public class Star implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Star(String userId, Integer starNum) {
-		this.userId = userId;
+	public Star(Integer starNum) {
 		this.starNum = starNum;
 	}
 

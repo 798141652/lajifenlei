@@ -8,7 +8,7 @@
     <class name="com.app.model.User" table="user" catalog="lajifenlei">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
-            <generator class="identity" />
+            <generator class="increment"></generator>
         </id>
         <property name="username" type="java.lang.String">
             <column name="username" length="45" />

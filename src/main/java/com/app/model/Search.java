@@ -1,14 +1,20 @@
 package com.app.model;
 
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
- * Search entity. @author MyEclipse Persistence Tools
+ * Food entity. @author MyEclipse Persistence Tools
  */
 
 public class Search implements java.io.Serializable {
 
 	// Fields
 
-	private SearchId id;
+	private Integer ID;
+	private String sName;
+	private Double classsify;
 
 	// Constructors
 
@@ -16,19 +22,41 @@ public class Search implements java.io.Serializable {
 	public Search() {
 	}
 
+	/** minimal constructor */
+	public Search(String sName) {
+		this.sName = sName;
+	}
+
 	/** full constructor */
-	public Search(SearchId id) {
-		this.id = id;
+	public Search(String sName, Double classsify) {
+		this.sName = sName;
+		this.classsify = classsify;
 	}
 
 	// Property accessors
 
-	public SearchId getId() {
-		return this.id;
+	public Integer getID() {
+		return this.ID;
 	}
 
-	public void setId(SearchId id) {
-		this.id = id;
+	public void setID(Integer ID) {
+		this.ID = ID;
 	}
 
+	public String getsName() {
+		return this.sName;
+	}
+
+	public void setsName(String sName) {
+		this.sName = sName;
+	}
+
+	public Double getclasssify() {
+		return this.classsify;
+	}
+
+	public void setclasssify(Double classsify) {
+		this.classsify = classsify;
+	}
 }
+	

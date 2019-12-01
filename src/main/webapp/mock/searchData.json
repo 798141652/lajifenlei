@@ -1,0 +1,622 @@
+[
+	{
+		"sName" : "塑料瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "化妆品塑料瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "乳酸菌塑料瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "牛奶塑料瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "塑料瓶盖",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "用过的塑料袋",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "早餐塑料袋",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "外卖塑料袋",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "超市塑料袋",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "化妆品玻璃瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "豆浆杯",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "剩菜剩饭",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "剩饭",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "米饭",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "外卖饭盒",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "盒饭",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "指甲油",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "书本",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "拖鞋",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "衣服",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "面膜",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "泡泡糖",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "擦过鼻涕的纸巾",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "纸巾",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "眼镜",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "内衣裤",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "保鲜盒",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "笔",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "鸡蛋",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "苹果核",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "蛋糕",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "胶带",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "面包",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "指甲油瓶子",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "沐浴露瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "耳机",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "耳机线",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "数据线",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "布面鼠标垫",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "水壶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "布玩偶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "毛绒玩具",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "牙刷",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "书包",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "报纸",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "办公用纸",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "传单",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "杂志",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "泡沫塑料",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "易拉罐",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "卸妆水",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "过期口红",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "奶茶吸管",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "奶茶杯",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "奶茶盖",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "鼠标垫",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "卫生巾",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "使用过的卫生巾",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "卫生巾包装袋",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "搓澡巾",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "泡面桶",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "泡面勺子",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "泡面袋",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "奶茶",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "奶茶珍珠",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "香蕉皮",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "芒果核",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "芒果皮",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "葡萄干",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "葡萄籽",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "葡萄皮",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "玉米芯",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "玉米棒",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "一次性注射器",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "油漆",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "药",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "感冒药包装",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "感冒药",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "废电池",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "洗发水瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "食品罐头",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "耳机线",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "床单",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "旧床单",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "金属耳环",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "耳环",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "项链",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "快递纸袋",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "快递包装袋",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "钢化膜",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "银行卡",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "玻璃啤酒瓶",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "玻璃水杯",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "护肤品玻璃罐",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "玻璃烟灰缸",
+		"classify" : "可回收物",
+		"ID" : 1
+	},
+	{
+		"sName" : "快递盒内防撞包",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "手机卡",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "发卡",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "头绳",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "玻璃胶",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "伞",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "橡皮泥",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "硬果壳",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "坚果壳",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "烧烤木签",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "烧烤竹签",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "核桃壳",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "甘蔗皮",
+		"classify" : "干垃圾",
+		"ID" : 4
+	},
+	{
+		"sName" : "麻辣烫",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "海底捞锅底",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "花生壳",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "瓜子皮",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "茶叶渣",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "肉干",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "风干食品",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "椰子肉",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "冲泡饮料",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "蛋壳",
+		"classify" : "湿垃圾",
+		"ID" : 3
+	},
+	{
+		"sName" : "水银体温计",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "蓄电池",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "充电电池",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "杀虫剂",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "杀虫喷雾",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	},
+	{
+		"sName" : "废日光灯管",
+		"classify" : "有害垃圾",
+		"ID" : 2
+	}
+]

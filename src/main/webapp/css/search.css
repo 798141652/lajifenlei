@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* html,
+* body {
+    font-size: 12px;
+}
+
+* html .wrapper,
+* body .wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+* html .wrapper .header,
+* body .wrapper .header {
+    width: 100%;
+    height: 10%;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #10D99F;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+* html .wrapper .content,
+* body .wrapper .content {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url("../image/bg.jpg") 100% 100% / cover no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+* html .wrapper .content .search-box,
+* body .wrapper .content .search-box {
+    position: absolute;
+    width: 80%;
+    height: 3rem;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    border-radius: 5px;
+    display: flex;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+* html .wrapper .content .search-box .search,
+* body .wrapper .content .search-box .search {
+    flex: 8.9;
+    height: 100%;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: #FAFAFA;
+}
+
+* html .wrapper .content .search-box .btn,
+* body .wrapper .content .search-box .btn {
+    flex: 1.1;
+    height: 66%;
+    float: right;
+    margin-top: 0.5rem;
+    outline: none;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    background: url("../image/search1.png") 100% 100% / cover no-repeat;
+}
+
+* html .wrapper .content .result,
+* body .wrapper .content .result {
+    width: 80%;
+    height: 200px;
+    margin: 5.1rem auto;
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+}
+
+* html .wrapper .content .result .name,
+* body .wrapper .content .result .name {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    text-align: center;
+    color: #000;
+}
+
+* html .wrapper .content .result .belong,
+* body .wrapper .content .result .belong {
+    text-align: center;
+    color: #BDBDBD;
+    margin-top: 0.5rem;
+}
+
+* html .wrapper .content .result .pic,
+* body .wrapper .content .result .pic {
+    width: 80%;
+    height: 100px;
+    margin-left: 26px;
+}
+
+* html .wrapper .content .result .no,
+* body .wrapper .content .result .no {
+    /*text-align: center;*/
+    color: #a4a4a4;
+    margin: 85px 20px 85px 50px;
+    font-size: 20px;
+}
+
+
+

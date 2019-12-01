@@ -1,9 +1,9 @@
 #MyEclipse Hibernate Properties
-#Mon Nov 18 00:20:56 CST 2019
+#Sun Dec 01 22:14:29 CST 2019
 reStrategyClass=
 detectM2M=false
 createConfigFile=true
-reSettingsFile=
+reSettingsFile=/lajifenlei/hibernate.reveng.xml
 profile=
 keyGenerator=
 genAnnotations=false
