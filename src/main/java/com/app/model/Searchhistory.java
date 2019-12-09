@@ -1,33 +1,33 @@
 package com.app.model;
 
 /**
- * Searchhistory entity. @author MyEclipse Persistence Tools
+ * SearchHistory entity. @author MyEclipse Persistence Tools
  */
 
-public class Searchhistory implements java.io.Serializable {
+public class SearchHistory implements java.io.Serializable {
 
 	// Fields
 
-	private SearchhistoryId id;
+	private SearchHistoryId id;
 
 	// Constructors
 
 	/** default constructor */
-	public Searchhistory() {
+	public SearchHistory() {
 	}
 
 	/** full constructor */
-	public Searchhistory(SearchhistoryId id) {
+	public SearchHistory(SearchHistoryId id) {
 		this.id = id;
 	}
 
 	// Property accessors
 
-	public SearchhistoryId getId() {
+	public SearchHistoryId getId() {
 		return this.id;
 	}
 
-	public void setId(SearchhistoryId id) {
+	public void setId(SearchHistoryId id) {
 		this.id = id;
 	}
 

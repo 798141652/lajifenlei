@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>My JSP 'search.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -25,11 +25,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <s:form action="customer/customer_login" method="post">
-    	<s:textfield name="customer.name" lable="用户名"></s:textfield>
-    	<s:password name="customer.password" lable="密码"></s:password>
-    	<s:submit value="登录"></s:submit>
-    </s:form>
-    <br>
+    <s:form action="" method="post">
+	  				<lable>垃圾名称：</lable>
+	  				<input type="text" name="keyWords" placeholder="请输入垃圾名称"><s:submit value="查询"></s:submit>
+  				</s:form>
   </body>
 </html>

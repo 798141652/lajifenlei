@@ -19,16 +19,12 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class UserAction extends ActionSupport implements SessionAware{
 	
-
-
 	private static final long serialVersionUID = 1L;
-
 	/*业务层对象*/
-    @Resource UserDao userDao;
-    
+    @Resource UserDao userDao;  
     private User user;
     
-
+    
     
 	private Map<String,Object> session;
 

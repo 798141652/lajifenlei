@@ -1,10 +1,10 @@
 package com.app.model;
 
 /**
- * SearchhistoryId entity. @author MyEclipse Persistence Tools
+ * SearchHistoryId entity. @author MyEclipse Persistence Tools
  */
 
-public class SearchhistoryId implements java.io.Serializable {
+public class SearchHistoryId implements java.io.Serializable {
 
 	// Fields
 
@@ -14,11 +14,11 @@ public class SearchhistoryId implements java.io.Serializable {
 	// Constructors
 
 	/** default constructor */
-	public SearchhistoryId() {
+	public SearchHistoryId() {
 	}
 
 	/** full constructor */
-	public SearchhistoryId(String userId, String sname) {
+	public SearchHistoryId(String userId, String sname) {
 		this.userId = userId;
 		this.sname = sname;
 	}
@@ -46,9 +46,9 @@ public class SearchhistoryId implements java.io.Serializable {
 			return true;
 		if ((other == null))
 			return false;
-		if (!(other instanceof SearchhistoryId))
+		if (!(other instanceof SearchHistoryId))
 			return false;
-		SearchhistoryId castOther = (SearchhistoryId) other;
+		SearchHistoryId castOther = (SearchHistoryId) other;
 
 		return ((this.getUserId() == castOther.getUserId()) || (this.getUserId() != null
 				&& castOther.getUserId() != null && this.getUserId().equals(castOther.getUserId())))
