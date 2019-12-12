@@ -25,11 +25,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <s:form action="customer/customer_login" method="post">
-    	<s:textfield name="customer.name" lable="用户名"></s:textfield>
-    	<s:password name="customer.password" lable="密码"></s:password>
+    <h1 align="center">用户登录页面</h1>
+  <hr>
+  <div align="center">
+    <s:form action="user/user_login" method="post">
+    	<s:textfield name="user.username" key="用户名"></s:textfield>
+    	<s:password name="user.password" key="密码"></s:password>
     	<s:submit value="登录"></s:submit>
     </s:form>
     <br>
+   </div>
   </body>
 </html>

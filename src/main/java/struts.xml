@@ -9,10 +9,10 @@
      <!--Struts2中Action对象的创建交给spring完成-->
      <constant name="struts.objectFactory" value="spring" />
 
-	 <package name="search" namespace="/search" extends="struts-default">
-	        <action name="search_*" class="searchAction" method="{1}">
-	        	<result name="show_view">/main.jsp</result>
-	        	<result name="message">/message.jsp</result>
+	 <package name="user" namespace="/user" extends="struts-default">
+	        <action name="user_*" class="userAction" method="{1}">
+	        	<result name="show_view">/index.jsp</result>
+	        	<result name="input">/login.jsp</result>
 	        </action>
 	 </package>
 

@@ -1,7 +1,17 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
+<%@ taglib uri="/struts-tags" prefix="s"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
 <!doctype html>
 <html>
 <head>
-<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/style.css" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
 <title>垃圾百科</title>
 </head>
@@ -16,24 +26,24 @@
 				<a>上海</a>
 				</div>
 		</div>
-	</div>	
+	</div>
 	<div class="body">
 		<div class="selecttype">
-			<a class="img1" target="_self" href="kehuishouwu.html">
-					<img src="images/kehuishouwu.png" alt="可回收物" width="200" height="250">
-			  <div class="desc">可回收物</div>
+			<a class="img1" target="_self" href="kehuishouwu.jsp" >
+					<img src="image/kehuishouwu.png" alt="可回收物" width="200" height="250">
+			  <span class="desc">可回收物</span>
 			</a>
-			<a class="img2" target="_self" href="shilaji.html" style=" border-bottom: 4px solid #6A483F;">
-					<img src="images/shilaji.png" alt="湿垃圾" width="200" height="250">
-			  <div class="desc">湿垃圾</div>
+			<a class="img2" target="_self" href="shilaji.jsp"  style=" border-bottom: 4px solid #6A483F;">
+					<img src="image/shilaji.png" alt="湿垃圾" width="200" height="250">
+			  <span class="desc">湿垃圾</span>
 			</a>
-			<a class="img3" target="_self" href="ganlaji.html">
-					<img src="images/ganlaji.png" alt="干垃圾" width="200" height="250">
-			  <div class="desc">干垃圾</div>
+			<a class="img3" target="_self" href="ganlaji.jsp">
+					<img src="image/ganlaji.png" alt="干垃圾" width="200" height="250">
+			  <span class="desc">干垃圾</span>
 			</a>
-			<a class="img4" target="_self" href="youhailaji.html">
-					<img src="images/youhailaji.png" alt="有害垃圾" width="200" height="250">
-			  <div class="desc">有害垃圾</div>
+			<a class="img4" target="_self" href="youhailaji.jsp">
+					<img src="image/youhailaji.png" alt="有害垃圾" width="200" height="250">
+			  <span class="desc">有害垃圾</span>
 			</a>
 		</div>
 		
@@ -65,17 +75,17 @@
 			<tr><td>糖果</td></tr>
 			<tr><td>风干食品</td></tr>
 			<tr><td>冲泡饮料</td></tr>
-			<tr><td>面粉</td></tr>
-			<tr><td>宠物饲料</td></tr>
-			<tr><td>水果果肉</td></tr>
-			<tr><td>水果果皮</td></tr>
-			<tr><td>水果茎枝</td></tr>
-			<tr><td>果实</td></tr>
-			<tr><td>家养绿植</td></tr>
-			<tr><td>花卉</td></tr>
-			<tr><td>花瓣</td></tr>
-			<tr><td>枝叶</td></tr>
-			<tr><td>中药药渣</td></tr>
+<!--			<tr><td>面粉</td></tr>-->
+<!--			<tr><td>宠物饲料</td></tr>-->
+<!--			<tr><td>水果果肉</td></tr>-->
+<!--			<tr><td>水果果皮</td></tr>-->
+<!--			<tr><td>水果茎枝</td></tr>-->
+<!--			<tr><td>果实</td></tr>-->
+<!--			<tr><td>家养绿植</td></tr>-->
+<!--			<tr><td>花卉</td></tr>-->
+<!--			<tr><td>花瓣</td></tr>-->
+<!--			<tr><td>枝叶</td></tr>-->
+<!--			<tr><td>中药药渣</td></tr>-->
 			
 		</table>
 		
