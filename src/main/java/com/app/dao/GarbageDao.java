@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.app.model.Garbage;
+import com.app.model.GarbageType;
 
 @Service @Transactional
 public class GarbageDao {
@@ -59,11 +60,27 @@ public class GarbageDao {
    	List garbageList;
    	String hql = "From Garbage garbage where 1=1";
    	if(!garbagename.equals("")){ 
-   		
-   		hql = hql + " and garbage.garbagename like '%" + garbagename + "%'";
+   		hql = hql + " and garbage.garbageName like '%" + garbagename + "%'";
 	    	Query q = s.createQuery(hql);
 	    	garbageList = q.list();
-	    	
+   	}else{
+   		
+   	    garbageList =null;	
+   	
+   	}
+   	return (ArrayList<Garbage>) garbageList;
+   }
+   
+   /*根据类别查询*/
+   public ArrayList<Garbage> QueryGarbageByType(GarbageType garbagetype) {
+   	
+   	Session s = factory.getCurrentSession();
+   	List garbageList;
+   	String hql = "From Garbage garbage where 1=1";
+   	if(garbagetype!=null){ 
+   		hql = hql + " and garbage.garbageType.garbagetypeName like '%" + garbagetype.getGarbagetypeName() + "%'";
+	    	Query q = s.createQuery(hql);
+	    	garbageList = q.list();
    	}else{
    		
    	    garbageList =null;	

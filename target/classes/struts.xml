@@ -15,5 +15,23 @@
 	        	<result name="input">/login.jsp</result>
 	        </action>
 	 </package>
+	 
+	  <package name="garbage" namespace="/garbage" extends="struts-default">
+	        <action name="garbage_*" class="garbageAction" method="{1}">
+	        	<result name="show_view">/index.jsp</result>
+	        	<result name="baike">/baike.jsp</result>
+	        </action>
+	 </package>
+	 
+	 <package name="garbagetype" namespace="/garbagetype" extends="struts-default">
+	        <action name="garbagetype_*" class="garbagetypeAction" method="{1}">
+	        	
+	        	<result name="baike">
+	     			/baike.jsp
+     			</result>
+     			
+     			<result name="show_view">/index.jsp</result>
+	        </action>
+	 </package>
 
 </struts>

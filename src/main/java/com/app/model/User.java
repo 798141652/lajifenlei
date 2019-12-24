@@ -1,8 +1,17 @@
 package com.app.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
+
 /**
  * User entity. @author MyEclipse Persistence Tools
  */
+@Entity
+@Table(name = "user", catalog = "lajifenlei")
 
 public class User implements java.io.Serializable {
 
@@ -25,6 +34,11 @@ public class User implements java.io.Serializable {
 	}
 
 	// Property accessors
+	@GenericGenerator(name = "generator", strategy = "increment")
+	@Id
+	@GeneratedValue(generator = "generator")
+
+	@Column(name = "id", unique = true, nullable = false)
 
 	public Integer getId() {
 		return this.id;
@@ -34,6 +48,8 @@ public class User implements java.io.Serializable {
 		this.id = id;
 	}
 
+	@Column(name = "username", length = 45)
+
 	public String getUsername() {
 		return this.username;
 	}
@@ -41,6 +57,8 @@ public class User implements java.io.Serializable {
 	public void setUsername(String username) {
 		this.username = username;
 	}
+
+	@Column(name = "password", length = 45)
 
 	public String getPassword() {
 		return this.password;

@@ -8,17 +8,29 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
 import com.app.dao.GarbageDao;
+import com.app.dao.GarbageTypeDao;
 import com.app.model.Garbage;
+import com.app.model.GarbageType;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Controller @Scope("prototype")
 public class GarbageAction extends ActionSupport{
 	@Resource GarbageDao garbageDAO;
+	@Resource GarbageTypeDao garbagetypeDAO;
+	
 	private Garbage garbage;
+	private GarbageType garbagetype;
 	private List<Garbage> garbageList;
 	private String keyWords;
 
 	
+	
+	public GarbageType getGarbagetype() {
+		return garbagetype;
+	}
+	public void setGarbagetype(GarbageType garbageType) {
+		this.garbagetype = garbageType;
+	}
 	public String getKeyWords() {
 		return keyWords;
 	}
@@ -79,4 +91,5 @@ public class GarbageAction extends ActionSupport{
 		garbageList = garbageDAO.QueryGarbageInfo(keyWords);
 		return "show_view";
 	}
+	
 }

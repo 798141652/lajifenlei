@@ -18,14 +18,14 @@ public class GarbageTypeDao {
 	@Resource SessionFactory factory;
 	
   
-  /*更新GarbageType信息*/
-  public void UpdateGarbageType(GarbageType garbagetype) throws Exception {
+  /*更新Garbagetype信息*/
+  public void UpdateGarbagetype(GarbageType garbageType) throws Exception {
       Session s = factory.getCurrentSession();
-      s.update(garbagetype);
+      s.update(garbageType);
   }
   
-  /*查询所有GarbageType信息*/
-  public ArrayList<GarbageType> QueryAllGarbageType() {
+  /*查询所有Garbagetype信息*/
+  public ArrayList<GarbageType> QueryAllGarbagetype() {
       Session s = factory.getCurrentSession();
       String hql = "From GarbageType";
       Query q = s.createQuery(hql);
@@ -34,21 +34,21 @@ public class GarbageTypeDao {
   }
 
   /*根据主键获取对象*/
-  public GarbageType GetGarbageTypeById(Integer garbagetypeid) {
+  public GarbageType GetGarbagetypeById(Integer garbagetypeid) {
       Session s = factory.getCurrentSession();
-      GarbageType garbagetype = (GarbageType)s.get(GarbageType.class, garbagetypeid);
-      return garbagetype;
+      GarbageType garbageType = (GarbageType)s.get(GarbageType.class, garbagetypeid);
+      return garbageType;
   }
   
   /*根据查询条件查询*/
-  public ArrayList<GarbageType> QueryGarbageTypeInfo(String garbagetypename) {
+  public ArrayList<GarbageType> QueryGarbagetypeInfo(String garbagetypename) {
   	
   	Session s = factory.getCurrentSession();
   	List garbagetypeList;
   	String hql = "From GarbageType garbagetype where 1=1";
   	if(!garbagetypename.equals("")){ 
   		
-  		hql = hql + " and garbage.garbagename like '%" + garbagetypename + "%'";
+  		hql = hql + " and garbagetype.garbagetypeName like '%" + garbagetypename + "%'";
 	    	Query q = s.createQuery(hql);
 	    	garbagetypeList = q.list();
 	    	
