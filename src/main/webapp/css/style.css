@@ -5,7 +5,7 @@ body{
 .head{
 	text-align: center;
 	background-color: #10D99F;
-	height:120px;
+	height:100px;
 	width:50%;
 	position: fixed;
 	top:0;
@@ -16,7 +16,7 @@ body{
 	font-size: 20px;
 	font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 	color: white;
-	padding-top: 45px;
+	padding-top: 10px;
 }
 .selectcity{
 
@@ -189,17 +189,3 @@ td{
 
 
 
-.footer {
-	text-align: center;
-	background-color: #10D99F;
-	height:120px;
-	width:50%;
-	position: fixed;
-	bottom:0;
-	left:25%;
-	margin:0 auto;
-}
-.footer a{
-	color: white;
-	text-decoration: none;
-}

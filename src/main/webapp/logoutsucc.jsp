@@ -18,17 +18,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
+	<meta http-equiv="Refresh" content="1;url=index.jsp">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   
   <body>
-    <div class="head"><div class="title">登录</div></div>
+    <div class="head"><div class="title">注销</div></div>
   <div class="body">
-    <s:form action="user/user_login" method="post">
-    	<s:textfield name="user.username" key="用户名"></s:textfield>
-    	<s:password name="user.password" key="密码"></s:password>
-    	<s:submit value="登录"></s:submit>
-    </s:form>
+    注销成功
     <br>
    </div>
   </body>

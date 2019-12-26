@@ -13,6 +13,9 @@
 	        <action name="user_*" class="userAction" method="{1}">
 	        	<result name="show_view">/index.jsp</result>
 	        	<result name="input">/login.jsp</result>
+	        	<result name="logout_success">/logoutsucc.jsp</result>
+	        	<result name="success">/loginsucc.jsp</result>
+	        	<result name="fail">/loginfail.jsp</result>
 	        </action>
 	 </package>
 	 
@@ -25,13 +28,16 @@
 	 
 	 <package name="garbagetype" namespace="/garbagetype" extends="struts-default">
 	        <action name="garbagetype_*" class="garbagetypeAction" method="{1}">
-	        	
-	        	<result name="baike">
-	     			/baike.jsp
-     			</result>
-     			
+	        	<result name="baike">/baike.jsp</result>
      			<result name="show_view">/index.jsp</result>
 	        </action>
+	 </package>
+	 
+	 <package name="star" namespace="/star" extends="struts-default">
+	 		<action name="star_*" class="starAction" method="{1}">
+	 			<result name="message">starinfo.jsp</result>
+	 			<result name="all-message">showstar.jsp</result>
+	 		</action>
 	 </package>
 
 </struts>

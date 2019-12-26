@@ -11,12 +11,16 @@
 </head>
 <body>
 <div class="footer">
-	<div class="pic"><span></span><span></span><span></span></div>
-	<div class="tip">
-		<a href="search.html">首页</a>
-		<a href="baike.html">百科</a>
-		<a href="personal.html">设置</a>
+
+		<div>
+			<a href="index.jsp"> <img src="image/first.png" width="70px"
+				height="70px"><span>首页</span>
+			</a> <a href="garbagetype/garbagetype_queryGarbageType?garbagetype.garbagetypeName=可回收物"> <img src="image/sort.png" width="70px"
+				height="70px"><span>百科</span>
+			</a> <a href="personal.jsp"> <img src="image/set.png" width="70px"
+				height="70px"><span>设置</span>
+			</a>
+		</div>
 	</div>
-</div>
 </body>
 </html>

@@ -14,7 +14,19 @@
 			<generator class="increment"></generator>
 		</primary-key>
 	</table>
-<table name="user" catalog="lajifenlei" class="com.app.model.User">
+	<table name="user" catalog="lajifenlei"
+		class="com.app.model.User">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+	<table name="advice" catalog="lajifenlei"
+		class="com.app.model.Advice">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+<table name="star" catalog="lajifenlei" class="com.app.model.Star">
 	<primary-key>
 		<generator class="increment"></generator>
 	</primary-key>

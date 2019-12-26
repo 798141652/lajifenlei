@@ -38,7 +38,7 @@
 
 <body>
 	<div class="head">
-		<span>垃圾分类app</span>
+		<p class="title">垃圾分类app</p>
 		<c:choose>
 			<c:when test="${user.username ==null}">
 				<a href="register.jsp">注册</a>
@@ -73,17 +73,10 @@
 		</s:form>
 
 	</div>
-	<div class="footer">
-
-		<div>
-			<a href="index.jsp"> <img src="image/first.png" width="70px"
-				height="70px"><span>首页</span>
-			</a> <a href="baike.jsp"> <img src="image/sort.png" width="70px"
-				height="70px"><span>百科</span>
-			</a> <a href="personal.jsp"> <img src="image/set.png" width="70px"
-				height="70px"><span>设置</span>
-			</a>
-		</div>
-	</div>
+	<div class="footer"></div>
 </body>
+<script src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $('.footer').load("common.jsp");
+</script>
 </html>

@@ -21,6 +21,15 @@
 <body>
 	<div class="head">
 		<p class="title">分类百科</p>
+		<c:choose>
+			<c:when test="${user.username ==null}">
+				<a href="reg.jsp">注册</a>
+				<a href="login.jsp">登录</a>
+			</c:when>
+			<c:otherwise>
+				<c:out value="${user.username}"></c:out>, 欢迎您!
+	       </c:otherwise>
+		</c:choose>
 		<div class="selectcity">
 			<button class="but">选择城市</button>
 			<div class="city">
@@ -50,18 +59,11 @@
 		</div>
 
 
- <c:choose>
-	       <c:when test="${customer.name ==null}">
-	         <a href="reg.jsp">注册</a>
-	         <a href="login.jsp">登录</a>
-	       </c:when>
-	       <c:otherwise>
-	         <c:out value="${customer.name}"></c:out>, 欢迎您!
-	       </c:otherwise>
-	     </c:choose>
 
 		<div id="title">
-		 <c:choose><c:when test="${garbagetype.garbagetypeName ==null}"></c:when></c:choose>
+			<c:choose>
+				<c:when test="${garbagetype.garbagetypeName ==null}"></c:when>
+			</c:choose>
 			<p id="type">
 				<strong> <c:out value="${garbagetype.garbagetypeName}"></c:out></strong>&nbsp;
 				<c:out value="${garbagetype.introduce}"></c:out>
@@ -85,21 +87,10 @@
 	</div>
 
 	<div class="footer">
-
-		<div>
-			<a href="index.jsp"> <img src="image/first.png" width="70px"
-				height="70px"><span>首页</span>
-			</a> <a href="baike.html"> <img src="image/sort.png" width="70px"
-				height="70px"><span>百科</span>
-			</a> <a href="personal.html"> <img src="image/set.png" width="70px"
-				height="70px"><span>设置</span>
-			</a>
-		</div>
 	</div>
 </body>
+<script src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript">
-	if (document.getElementById("type").innerHTML == "可回收物") {
-		document.getElementById("content").style.backgroundColor = red;
-	}
+    $('.footer').load("common.jsp");
 </script>
 </html>
