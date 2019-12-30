@@ -4,40 +4,88 @@
 
 
 
- <constant name="struts.i18n.encoding" value="utf-8"/>
-     <constant name="struts.devMode" value="true" />
-     <!--Struts2中Action对象的创建交给spring完成-->
-     <constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.devMode" value="true" />
+	<!--Struts2中Action对象的创建交给spring完成 -->
+	<constant name="struts.objectFactory" value="spring" />
 
-	 <package name="user" namespace="/user" extends="struts-default">
-	        <action name="user_*" class="userAction" method="{1}">
-	        	<result name="show_view">/index.jsp</result>
-	        	<result name="input">/login.jsp</result>
-	        	<result name="logout_success">/logoutsucc.jsp</result>
-	        	<result name="success">/loginsucc.jsp</result>
-	        	<result name="fail">/loginfail.jsp</result>
-	        </action>
-	 </package>
-	 
-	  <package name="garbage" namespace="/garbage" extends="struts-default">
-	        <action name="garbage_*" class="garbageAction" method="{1}">
-	        	<result name="show_view">/index.jsp</result>
-	        	<result name="baike">/baike.jsp</result>
-	        </action>
-	 </package>
-	 
-	 <package name="garbagetype" namespace="/garbagetype" extends="struts-default">
-	        <action name="garbagetype_*" class="garbagetypeAction" method="{1}">
-	        	<result name="baike">/baike.jsp</result>
-     			<result name="show_view">/index.jsp</result>
-	        </action>
-	 </package>
-	 
-	 <package name="star" namespace="/star" extends="struts-default">
-	 		<action name="star_*" class="starAction" method="{1}">
-	 			<result name="message">starinfo.jsp</result>
-	 			<result name="all-message">showstar.jsp</result>
-	 		</action>
-	 </package>
+
+	<package name="default" extends="struts-default">  <!-- 注意此包的写法 -->
+		<!-- 配置一个拦截器 -->
+		<interceptors>
+			<!-- 拦截器对应的class是 com.food.util.LoginInterceptors -->
+			<interceptor name="LoginInterceptors"
+				class="com.app.util.LoginInterceptors">
+				<!-- excludeName 是例外的action，也就是下面这几个action不会被拦截 -->
+				<param name="excludeName">user_login,user_reg,garbage_queryGarbages,
+					garbagetype_queryGarbageType</param>
+				<!-- customer可以作为参数传递，取自session.put("user", db_user);中的这个user -->
+				<param name="sessionName">user</param>
+			</interceptor>
+			<!-- 定义拦截器 栈，用来放拦截器，其中LoginInterceptors是登录拦截器，也就是我们自定义的这个拦截器， defaultStack是struts默认拦截器，必须加上，否则struts自带的很多功能就没法用，比如传参 -->
+			<interceptor-stack name="myInterceptors">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="LoginInterceptors" />
+			</interceptor-stack>
+		</interceptors>
+		<!-- 将上面的拦截器栈作为这个工程的拦截器，也就是自定义的登录拦截器和 struts默认拦截器都起作用 -->
+		<default-interceptor-ref name="myInterceptors"></default-interceptor-ref>
+
+		<global-results>
+			<result name="login" type="redirect">/login.jsp</result>
+			<result name="re-success" type="redirect">${prePage}</result>
+		</global-results>
+	</package>
+
+	<package name="user" namespace="/user" extends="default">
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="logout_success">/personal.jsp</result>
+			<result name="success">/index.jsp</result>
+			<result name="fail">/login.jsp</result>
+			<result name="detail_view">/editpersonal.jsp</result>
+			<result name="edit_message">/editmessage.jsp</result>
+			 <result name="show_view">/personal.jsp</result> 
+			<result name="show_allUser">/alluserinfo.jsp</result>
+
+			<!--<result name="show_view" type="chain">
+				<param name="actionName">advice_addAdvice</param>
+				<param name="namespace">/advice</param>
+				<param name="param1">${user.username}</param>
+			</result>-->
+
+		</action>
+	</package>
+
+	<package name="garbage" namespace="/garbage" extends="default">
+		<action name="garbage_*" class="garbageAction" method="{1}">
+			<result name="show_view">/index.jsp</result>
+			<result name="baike">/baike.jsp</result>
+			<result name="show_allgabage">/allgarbageinfo.jsp</result>
+		</action>
+	</package>
+
+	<package name="garbagetype" namespace="/garbagetype"
+		extends="default">
+		<action name="garbagetype_*" class="garbagetypeAction"
+			method="{1}">
+			<result name="baike">/baike.jsp</result>
+			<result name="show_view">/index.jsp</result>
+		</action>
+	</package>
+
+	<package name="advice" namespace="/advice" extends="default">
+		<action name="advice_*" class="adviceAction" method="{1}">
+			<result name="show_view">/personal.jsp</result>
+			<result name="message">/adviceinfo.jsp</result>
+			<result name="all-message">/alladviceinfo.jsp</result>
+		</action>
+	</package>
+
+	<package name="star" namespace="/star" extends="default">
+		<action name="star_*" class="starAction" method="{1}">
+			<result name="message">/starinfo.jsp</result>
+			<result name="all-message">/allstarinfo.jsp</result>
+		</action>
+	</package>
 
 </struts>

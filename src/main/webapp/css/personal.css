@@ -5,9 +5,10 @@
     text-decoration: none;
 }
 
-* html,
-* body {
+html,
+body {
     font-size: 12px;
+   
 }
 
 * html .personal,
@@ -15,19 +16,46 @@
     width: 100vw;
     height: 100vh;
     position: relative;
+    /* background-color:#ddd;*/
 }
 
-* html .personal .settings,
-* body .personal .settings {
-    width: 100%;
-    height: 10%;
-    padding: 1.5rem;
-    font-size: 1.1rem;
+.personal .head{
+	 width: 100%;
+    height: 8%;
+   display:flex;
+   align-items:center;
+   justify-content:flex-start;
+   padding-left:0.3rem;
+    font-size: 0.56rem;
     text-align: center;
     background-color: #10D99F;
     color: #fff;
     box-sizing: border-box;
 }
+.personal .head .img{
+	width: 0.7rem;
+    height: 0.7rem;
+    /*margin-top: -0.7rem;*/
+}
+.img img{
+	width:100%;
+height:100%;
+border-radius:50%;
+}
+.head .tips{
+	padding-left: 0.2rem;
+    font-size: 0.38rem;
+}
+.head .zhuxiao{
+	flex: 6;
+    text-align: right;
+    margin-right:0.3rem;
+}
+.head .zhuxiao a{
+	color:#fff;
+	font-size:0.38rem;
+}
+
 
 * html .personal .content,
 * body .personal .content {
@@ -39,7 +67,7 @@
 * html .personal .content .list,
 * body .personal .content .list {
     width: 100%;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -47,16 +75,17 @@
 * html .personal .content .list li,
 * body .personal .content .list li {
     flex: 1;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
+ 
 }
 
 * html .personal .content .list li .icon,
 * body .personal .content .list li .icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-left: 0.2rem;
     display: inline-block;
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -90,18 +119,19 @@
 
 * html .personal .content .list li .text,
 * body .personal .content .list li .text {
-    width: 9rem;
-    height: 2rem;
-    margin-top: 10px;
-    font-size: 1.1rem;
-    margin-left: 10px;
+	display:block;
+    width: 3rem;
+    height: 1rem;
+    margin-top: 0.45rem;
+    font-size: 0.38rem;
+    margin-left: 0.2rem;
 }
 
 * html .personal .content .list li a,
 * body .personal .content .list li a {
-    width: 14px;
-    height: 14px;
-    margin-left: 121px;
+    width: 0.35rem;
+    height: 0.35rem;
+    margin-left: 4.5rem;
     display: inline-block;
     background: url("../image/big.png") 100% 100% / cover no-repeat;
 }

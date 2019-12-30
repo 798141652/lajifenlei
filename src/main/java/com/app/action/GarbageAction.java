@@ -57,7 +57,7 @@ public class GarbageAction extends ActionSupport{
 	/*显示所有Garbage*/
 	public String showGarbage() {
 		garbageList = garbageDAO.QueryAllGarbage();
-		return "show_view";
+		return "show_allgabage";
 	}
 	/*显示某一Garbage的详细信息*/
 	public String showDetail() {

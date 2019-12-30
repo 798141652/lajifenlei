@@ -87,7 +87,7 @@ public class GarbageType implements java.io.Serializable {
 		this.requirement = requirement;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "garbageType")
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "garbageType")
 
 	public Set<Garbage> getGarbages() {
 		return this.garbages;

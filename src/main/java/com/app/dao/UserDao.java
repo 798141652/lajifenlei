@@ -53,6 +53,7 @@ public class UserDao {
         return user;
     }
     
+    
     /*根据查询条件查询*/
     public ArrayList<User> QueryUserInfo(String username) {
     	
@@ -61,7 +62,7 @@ public class UserDao {
     	String hql = "From User user where 1=1";
     	if(!username.equals("")){ 
     		
-    		hql = hql + " and user.username like '%" + username + "%'";
+    		hql = hql + " and user.username like '" + username + "'";
 	    	Query q = s.createQuery(hql);
 	    	userList = q.list();
 	    	

@@ -18,6 +18,7 @@ public class User implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
+	private String photopath;
 	private String username;
 	private String password;
 
@@ -28,9 +29,18 @@ public class User implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public User(String username, String password) {
+	public User(String photopath,String username, String password) {
+		this.photopath=photopath;
 		this.username = username;
 		this.password = password;
+	}
+
+	public String getPhotopath() {
+		return photopath;
+	}
+
+	public void setPhotopath(String photopath) {
+		this.photopath = photopath;
 	}
 
 	// Property accessors

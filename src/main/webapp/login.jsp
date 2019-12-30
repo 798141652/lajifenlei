@@ -1,35 +1,41 @@
-<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
+<%@ page language="java" import="java.util.*"
+	contentType="text/html; charset=utf-8"%>
 <%@ taglib uri="/struts-tags" prefix="s"%>
-
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <base href="<%=basePath%>">
-    
-    <title>My JSP 'login.jsp' starting page</title>
-    
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  
-  <body>
-    <div class="head"><div class="title">登录</div></div>
-  <div class="body">
-    <s:form action="user/user_login" method="post">
-    	<s:textfield name="user.username" key="用户名"></s:textfield>
-    	<s:password name="user.password" key="密码"></s:password>
-    	<s:submit value="登录"></s:submit>
-    </s:form>
-    <br>
-   </div>
-  </body>
+<head>
+<base href="<%=basePath%>">
+
+<title>My JSP 'login.jsp' starting page</title>
+
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+	<div class="common">
+		<div class="header">登录</div>
+
+		<div class="login">
+			<form action="user/user_login">
+				<div class="name">
+					<label for="username">用户名：</label> <input type="text" id="username"
+						name="user.username" placeholder="请输入用户名" required>
+				</div>
+				<div class="pass">
+					<label for="password">密&nbsp;码：</label> <input type="password"
+						placeholder="请输入密码" id="password" name="user.password" required>
+				</div>
+				<input type="submit" value="登录" id="submit">
+			</form>
+		</div>
+	</div>
+	<script src="js/rem.js"></script>
+</body>
 </html>

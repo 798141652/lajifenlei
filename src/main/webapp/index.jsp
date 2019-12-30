@@ -9,74 +9,65 @@
 			+ path + "/";
 %>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML>
 <html>
 <head>
-<base href="<%=basePath%>">
-
-<title>My JSP 'index.jsp' starting page</title>
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="This is my page">
-<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+	<base href="<%=basePath%>">
+	
+	<title>My JSP 'index.jsp' starting page</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/search.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<title>垃圾百科</title>
 </head>
-
 <body>
-
-	<!doctype html>
-<html>
-<head>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/search.css" rel="stylesheet" type="text/css">
-<meta charset="utf-8">
-<title>垃圾百科</title>
-</head>
-
-<body>
-	<div class="head">
-		<p class="title">垃圾分类app</p>
-		<c:choose>
-			<c:when test="${user.username ==null}">
-				<a href="register.jsp">注册</a>
-				<a href="login.jsp">登录</a>
-			</c:when>
-			<c:otherwise>
-				<c:out value="${user.username}"></c:out>, 欢迎您!
-	       </c:otherwise>
-		</c:choose>
-	</div>
-	<div class="body">
-		<s:form action="garbage/garbage_queryGarbages" method="post">
-			<div class="search">
-				<div class="search_input">
-					<lable>垃圾名称：</lable>
-					<input type="text" name="keyWords" placeholder="请输入关键词">
-					<s:submit class="find_button" value="查询"></s:submit>
-				</div>
+	<div class="wrapper">
+		<div class="header">垃圾分类</div>
+		<div class="content">
+			<div class="search-box">
+				<s:form action="garbage/garbage_queryGarbages" method="post">
+					<input type="text" name="keyWords" placeholder="请输入垃圾名称"
+						class="search">
+					<input type="submit" value="搜索" class="find_button">
+				</s:form>
 			</div>
-		</s:form>
+
+			<div class="result">
+				<s:form>
+					<!-- <table> -->
+					<ul>
+						<c:forEach var="garbage" items="${garbageList }"
+							varStatus="status">
+							<!--<tr>  -->
+							<li><span><c:out value="${garbage.garbageName }"></c:out></span>
+								<span><c:out
+										value="${garbage.garbageType.garbagetypeName }"></c:out></span></li>
+							<!--  
+							<td><c:out value="${garbage.garbageName }"></c:out></td>
+							<td><c:out value="${garbage.garbageType.garbagetypeName }"></c:out></td>
+							-->
+							<!--</tr>  -->
+						</c:forEach>
+					</ul>
+					<!--  	</table>-->
+				</s:form>
+			</div>
 
 
-		<s:form>
-			<table>
-				<c:forEach var="garbage" items="${garbageList }" varStatus="status">
-					<tr>
-						<td><c:out value="${garbage.garbageName }"></c:out></td>
-						<td><c:out value="${garbage.garbageType.garbagetypeName }"></c:out></td>
-					</tr>
-				</c:forEach>
-			</table>
-		</s:form>
-
+		</div>
+		<div class="footer"></div>
 	</div>
-	<div class="footer"></div>
+
 </body>
 <script src="js/jquery-3.3.1.js"></script>
+	<script src="js/rem.js"></script>
 <script type="text/javascript">
     $('.footer').load("common.jsp");
+  
 </script>
 </html>

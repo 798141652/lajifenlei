@@ -23,10 +23,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <div class="head"><div class="title">登录</div></div>
-  <div class="body">
-    登录失败
-    <br>
-   </div>
-  </body>
+	<div class="header">
+		登录
+	</div>
+	<div class="body">
+		<div class="tips-box" style="display:block">
+			<div class="mask"></div>
+			<div class="tips">
+				<p>登录失败！</p>
+			</div>
+		</div>
+	</div>
+	<!-- 
+	<script src="js/jquery-3.3.1.js"></script>
+	<script>
+		//点击提交按钮，提交成功后显示弹框；
+		$('.submitMyCom').click(function() {
+			$('.tips-box').css({
+				'display' : 'block'
+			})
+			return false;
+		})
+		//点击确定或遮罩层，提示框消失
+		$('.mask').click(function() {
+			$('.tips-box').css({
+				'display' : 'none'
+			})
+		})
+		$('#sure').click(function() {
+			$('.tips-box').css({
+				'display' : 'none'
+			})
+		})
+	</script>
+	 -->
+</body>
 </html>

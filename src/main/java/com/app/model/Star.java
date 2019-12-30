@@ -22,7 +22,7 @@ public class Star implements java.io.Serializable {
 
 	private Integer starId;
 	private User user;
-	private Integer starNum;
+	private String starNum;
 
 	// Constructors
 
@@ -31,7 +31,7 @@ public class Star implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Star(User user, Integer starNum) {
+	public Star(User user, String starNum) {
 		this.user = user;
 		this.starNum = starNum;
 	}
@@ -62,13 +62,13 @@ public class Star implements java.io.Serializable {
 		this.user = user;
 	}
 
-	@Column(name = "starNum", nullable = false)
+	@Column(name = "starNum", nullable = false, length = 10)
 
-	public Integer getStarNum() {
+	public String getStarNum() {
 		return this.starNum;
 	}
 
-	public void setStarNum(Integer starNum) {
+	public void setStarNum(String starNum) {
 		this.starNum = starNum;
 	}
 

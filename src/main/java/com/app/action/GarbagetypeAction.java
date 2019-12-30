@@ -50,7 +50,6 @@ public class GarbagetypeAction {
 	public String queryGarbageType() {
 		garbagetype = (GarbageType)garbagetypeDao.QueryGarbagetypeInfo(garbagetype.getGarbagetypeName()).get(0);
 		garbageList = garbageDao.QueryGarbageByType(garbagetype);
-		System.out.println(garbageList);
 		return "baike";
 	}
 

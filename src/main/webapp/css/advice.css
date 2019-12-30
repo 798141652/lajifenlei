@@ -1,0 +1,167 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* html,
+* body {
+    font-size: 12px;
+}
+/*
+ .wrapper {
+    width: 100vw;
+    height: 100vh;
+}*/
+
+ .header {
+      width: 100%;
+    height: 10%;
+    padding: 1.5rem;
+    font-size: 3.1rem;
+    text-align: center;
+    padding-top: 3rem;
+    background-color: #10D99F;
+    color: #fff;
+    box-sizing: border-box;
+}
+.back-to-personal {
+    position: absolute;
+    left: 2.32rem;
+    top: 4.0rem;
+    display: inline-block;
+    width: 3.38rem;
+    height: 3.38rem;
+    background: url(../image/ico_left_arrow.png) 100% 100% / cover no-repeat;
+}
+.fm{
+	font-size:2.5rem;
+}
+.fm .title{
+	display:block;
+	margin-top:1.5rem;
+	margin-left:1rem;
+}
+.fm ul{
+	margin-top:2rem;
+}
+.fm li {
+	height:4rem;
+	line-height:4rem;
+	margin-left:1.5rem;
+
+	background-color:#fff;
+}
+.fm li input{
+	width:2rem;
+	height:2rem;
+	margin-right:2rem;
+}
+.fm .des{
+	margin-top:2rem;
+	margin-left:1.5rem;
+}
+.fm textarea{
+	width:95%;
+	margin:3rem 2rem;
+	font-size:2.5rem;
+	border:1px solid #000;
+}
+.fm .submitMyCom{
+	    width: 39%;
+    height: 4.5rem;
+    font-size: 2.3rem;
+    border: none;
+    outline: none;
+    background-color: #00ff80;
+    color: #fff;
+    border-radius: 0.2rem;
+    margin-top: 10rem;
+    margin-left: 18rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tips-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+ .tips-box .mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.6;
+}
+ .tips-box .tips {
+    position: absolute;
+    top: 21rem;
+    left: 13.2rem;
+    width: 39rem;
+    height: 30.3rem;
+    border: 1px solid #ddd;
+    margin: 3.5rem auto;
+    background-color: #fff;
+}
+ .tips-box .tips .img {
+  width: 9rem;
+    height: 9rem;
+    margin: 3rem auto;
+}
+ .tips-box .tips .img img {
+  width: 100%;
+  height: 100%;
+}
+ .tips-box .tips p {
+font-size: 2.8rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.tips-box .tips a {
+     display: block;
+    width: 13rem;
+    height: 3.8rem;
+    text-align: center;
+    font-size: 2.46rem;
+ background-color: #00ff80;
+    color: #fff;
+    margin: 1.3rem auto;
+    border-radius: 10px;
+    text-decoration: none;
+}

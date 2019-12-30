@@ -21,12 +21,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="Refresh" content="1;url=index.jsp">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  
-  <body>
-    <div class="head"><div class="title">注销</div></div>
-  <div class="body">
-    注销成功
-    <br>
-   </div>
+
+<body>
+	<div class="header">
+		登录
+	</div>
+	<div class="body">
+		<div class="tips-box" style="display:block">
+			<div class="tips">
+				<p>注销成功！</p>
+			</div>
+		</div>
+	</div>
   </body>
 </html>

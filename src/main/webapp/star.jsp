@@ -26,27 +26,101 @@
 </head>
 
 <body>
-	<div class="head">
-		<div class="title">给我们评分</div>
-	</div>
-	<div class="body">
-		<div id="starBg" class="star_bg">
-			<input type="radio" id="starScore1" class="score score_1" value="1"
-				name="score"> <a href="#starScore1" class="star star_1"
-				title="差"><label for="starScore1">差</label></a> <input type="radio"
-				id="starScore2" class="score score_2" value="2" name="score">
-				<a href="#starScore2" class="star star_2" title="较差"><label
-				for="starScore2">较差</label></a> <input type="radio" id="starScore3"
-				class="score score_3" value="3" name="score"> <a
-				href="#starScore3" class="star star_3" title="普通"><label
-				for="starScore3">普通</label></a> <input type="radio" id="starScore4"
-				class="score score_4" value="4" name="score"> <a
-				href="#starScore4" class="star star_4" title="较好"><label
-				for="starScore4">较好</label></a> <input type="radio" id="starScore5"
-				class="score score_5" value="5" name="score"> <a href="#5"
-				class="star star_5" title="好"><label for="starScore5">好</label></a>
+	<div class="wrapper">
+		<div class="header">
+			<a href="personal.jsp" class="back-to-personal"></a> 给我们评分
 		</div>
+		<div class="content">
+			<form id="star" action="star/star_addStar" method="post">
+				<div class="stars">
+					<img src="image/empty.png" alt=""> <img src="image/empty.png"
+						alt=""> <img src="image/empty.png" alt=""> <img
+						src="image/empty.png" alt=""> <img src="image/empty.png"
+						alt="">
+				</div>
+				<div class="word" id="word"></div>
+				<input id="starcontent" type="hidden" name="star.starNum" value="" />
+				<button class="submitMyCom" id="submitMyCom">提交</button>
+			</form>
+		</div>
+		
+	 <div class="tips-box">
+        <div class="mask"></div>
+        <div class="tips">
+            <div class="img">
+                <img src="image/success.png" alt="">
+            </div>
+            <p>提交成功！</p>
+            <a href="personal.jsp" id="sure">确定</a>
+        </div>
+    </div>
+     
 	</div>
+
+	<script src="js/jquery-3.3.1.js"></script>
+	<script>
+		var words = [ "满意", "一般满意", "还不错", "很满意", "非常满意" ];
+		var divstars = document.getElementsByClassName("stars")[0];
+		var divword = document.getElementsByClassName("word")[0];
+		var star = -1;
+		divstars.addEventListener('touchmove', function(e) {
+			console.log('start');
+			if (e.target.tagName === "IMG") {
+				e.target.src = "image/shining.png";
+				var prev = e.target.previousElementSibling;
+				while (prev) {
+					prev.src = "image/shining.png";
+					prev = prev.previousElementSibling;
+				}
+				var next = e.target.nextElementSibling;
+				while (next) {
+					next.src = "image/empty.png";
+					next = next.nextElementSibling;
+				}
+				//文字
+				var index = Array.from(divstars.children).indexOf(e.target);
+				divword.innerHTML = words[index];
+			}
+	
+		})
+		console.log(divword.innerHTML);
+		divstars.onclick = function(e) {
+			if (e.target.tagName === "IMG") {
+				star = Array.from(divstars.children).indexOf(e.target);
+			}
+		}
+		divstars.touchend = function() {
+			divword.innerHTML = words[star] || "";
+			for (var i = 0; i < divstars.length; i++) {
+				if (i <= star) {
+					divstars.children[i].src = "image/shining.png";
+				} else {
+					divstars.children[i].src = "image/empty.png";
+				}
+			}
+		}
+		
+		    //点击提交按钮，提交成功后显示弹框；
+		    $('.submitMyCom').click(function () {
+		   $('.tips-box').css({
+		      'display':'block'
+		   })
+		   return false;
+		})
+		//点击确定或遮罩层，提示框消失
+		$('.mask').click(function () {
+		   $('.tips-box').css({
+		      'display':'none'
+		   })
+		})
+		$('#sure').click(function () {
+		   $('.tips-box').css({
+		      'display':'none'
+		   })
+		})
+		
+	
+	</script>
 </body>
 
 </html>

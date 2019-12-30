@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* html,
+* body {
+    font-size: 12px;
+}
+ .wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+ .header {
+      width: 100%;
+    height: 10%;
+    padding: 1.5rem;
+    font-size: 3.1rem;
+    text-align: center;
+    padding-top: 3rem;
+    background-color: #10D99F;
+    color: #fff;
+    box-sizing: border-box;
+}
+.back-to-personal {
+    position: absolute;
+    left: 2.32rem;
+    top: 4.0rem;
+    display: inline-block;
+    width: 3.38rem;
+    height: 3.38rem;
+    background: url(../image/ico_left_arrow.png) 100% 100% / cover no-repeat;
+}
+.content{
+	width:85%;
+	height:90%;
+	margin:0 auto;
+	font-size:1.5rem;
+}
+.content div{
+	line-height:2.3rem;
+}

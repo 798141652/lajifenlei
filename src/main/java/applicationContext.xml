@@ -20,7 +20,7 @@
 	
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
 		<property name="driverClass" value="org.gjt.mm.mysql.Driver"/>
-		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/lajifenlei?useUnicode=true&amp;characterEncoding=UTF-8"/>
+		<property name="jdbcUrl" value="jdbc:mysql://49.234.101.49:3306/lajifenlei?useUnicode=true&amp;characterEncoding=UTF-8"/>
 		<property name="user" value="root"/>
 		<property name="password" value="19981126"/>
 		<!--初始化时获取的连接数，取值应在minPoolSize与maxPoolSize之间。Default: 3 -->
